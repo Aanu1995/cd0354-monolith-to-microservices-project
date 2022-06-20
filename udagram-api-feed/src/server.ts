@@ -1,7 +1,3 @@
-import dotenv from 'dotenv';
-// Configure environment variables
-dotenv.config();
-
 import cors from 'cors';
 import express from 'express';
 import { sequelize } from './sequelize';
