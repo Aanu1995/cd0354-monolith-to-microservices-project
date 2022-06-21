@@ -7,7 +7,6 @@ import {config} from './config/config';
 import { User } from './controllers/v0/users/models/User';
 
 
-
 (async () => {
   sequelize.addModels([User]);
 

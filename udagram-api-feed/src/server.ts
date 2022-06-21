@@ -7,7 +7,6 @@ import {config} from './config/config';
 import { FeedItem } from './controllers/v0/feed/models/FeedItem';
 
 
-
 (async () => {
   sequelize.addModels([FeedItem]);
 
