@@ -9,21 +9,22 @@ spec:
   selector:
     matchLabels:
       app: frontend
+      api: external
   template:
     metadata:
       labels:
         app: frontend
+        api: external
     spec:
       containers:
         - name: frontend
           image: annulus/udagram-frontend:v1
           imagePullPolicy: Always
+          ports:
+            - containerPort: 80
           resources:
             requests:
-              memory: "64Mi"
               cpu: "250m"
             limits:
-              memory: "1024Mi"
               cpu: "500m"
-          ports:
-            - containerPort: 8100
+      restartPolicy: Always
