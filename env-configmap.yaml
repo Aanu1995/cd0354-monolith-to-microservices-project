@@ -3,10 +3,10 @@ kind: ConfigMap
 metadata:
   name: env-configmap
 data:
-  POSTGRES_DATABASE: annulusudagram
-  POSTGRES_HOST: annulusudagram.cb0xrsr88syy.us-east-1.rds.amazonaws.com
-  AWS_REGION: us-east-1
+  POSTGRES_DATABASE: xyz
+  POSTGRES_HOST: xyz
+  AWS_REGION: xyz
   AWS_PROFILE: default
-  AWS_S3_BUCKET: annulus-udagram
-  JWT_SECRET: annulusudagram
+  AWS_S3_BUCKET: xyz
+  JWT_SECRET: xyz
   URL: https://306DF5B808C9F212F177DEF143B69184.gr7.us-east-1.eks.amazonaws.com:8100
