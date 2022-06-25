@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: backend-user
   labels:
-    service: backend-user
+    app: backend-user
 spec:
   replicas: 2
   strategy:
@@ -13,11 +13,11 @@ spec:
     type: RollingUpdate
   selector:
     matchLabels:
-      service: backend-user
+      app: backend-user
   template:
     metadata:
       labels:
-        service: backend-user
+        app: backend-user
     spec:
       containers:
         - name: backend-user

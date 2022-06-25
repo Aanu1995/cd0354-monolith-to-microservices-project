@@ -9,12 +9,10 @@ spec:
   selector:
     matchLabels:
       app: frontend
-      api: external
   template:
     metadata:
       labels:
         app: frontend
-        api: external
     spec:
       containers:
         - name: frontend

@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: reverse-proxy
   labels:
-    service: reverse-proxy
+    app: reverse-proxy
 spec:
   selector:
-    service: reverse-proxy
+    app: reverse-proxy
   ports:
     - protocol: TCP
       port: 8080

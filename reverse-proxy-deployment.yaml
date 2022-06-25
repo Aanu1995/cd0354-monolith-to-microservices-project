@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: reverse-proxy
   labels:
-    service: reverse-proxy
+    app: reverse-proxy
 spec:
   replicas: 1
   selector:
     matchLabels:
-      service: reverse-proxy
+      app: reverse-proxy
   template:
     metadata:
       labels:
-        service: reverse-proxy
+        app: reverse-proxy
     spec:
       containers:
         - name: reverse-proxy
